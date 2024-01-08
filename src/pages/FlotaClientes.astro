@@ -1,12 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
+import Carruselflota from '../components/Carruselflota.astro';
+import Sectionclientes from '../components/Sectionclientes.astro'
 ---
 
 <Layout title="Transemco | Clientes">
 	<Navbar hero={false} />
 
 	<main>
+		<Carruselflota/>
 
+		<div>
+			<Sectionclientes/>
+		</div>
 	</main>
 </Layout>
