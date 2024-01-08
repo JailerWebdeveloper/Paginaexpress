@@ -2,29 +2,36 @@
 import Layout from "../layouts/Layout.astro";
 import LayoutSection1 from "../layouts/LayoutSection1.astro";
 import LayoutVideosection from "../layouts/LayoutVideosection.astro";
-import LayoutVideobackground from "../layouts/LayoutVideobackground.astro";
 import Card from "../components/Card.astro";
 import Carousel from "../components/Carousel.astro";
+import LayoutGalery from "../layouts/LayoutGalery.astro";
+import Botonmoderno from "../components/Botonmoderno.astro";
+import LayoutSection3 from "../layouts/LayoutSection3.astro";
 
 ---
 
 <Layout title="Transemco | Valledupar">
   <main>
-    <LayoutSection1
-      Title="Su Seguridad es lo Primero"
-      Description=""
-      video
-      videoSrc="https://www.youtube.com/embed/9ZqY0Zx3XqM"
-    />
-    
-	<LayoutVideobackground/>
-  
 
+    <div class="hero min-h-screen text-white" style="background-image: url(https://media.istockphoto.com/id/543991162/es/foto/transmilenio-autob%C3%BAs-en-bogot%C3%A1.jpg?s=612x612&w=0&k=20&c=-ULKhwW9fAzIwWCcRTb3qaI81oIYnBADsAC8N4tw1pw=);">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center">
+        <div class=" md:w-4/5">
+          <h1 class="mb-5 text-5xl font-bold tracking-wide">Su Seguridad es lo Primero</h1>
+          <p class="mb-5 w-4/5 text-2xl font-semibold mx-auto">Lo llevamos hasta su destino</p>
+          <Botonmoderno texto="¿quienes somos?"/>
+        </div>
+      </div>
+    </div>
+
+
+  <LayoutSection3 />
 	<LayoutSection1
 	Title="RESEÑA HISTORICA"
 	Description="TRANSPORTE EMPRESARIAL DE LA COSTA S.A.S es una empresa legalmente constituida registrada con el NIT. 901230939-5, habilitada mediante la Resolución 0027 del 08-04-2019 de MINTRANPORTE para el Transporte Especial de pasajeros; debido a la excelente labor de sus dos (2) socios y vinculados, los cuales formamos una gran familia responsable y comprometida. La Empresa, fue creada con el fin de ofrecer un servicios de Transporte Especial de pasajeros con énfasis en el transporte de Ejecutivos, servicio de transporte escolar y servicio de transportes turísticos, en nuestra experiencia nos satisface haberles servido a las empresas: COMPASS GROUP, CHEMONICS INC, ORO VERDE VIAJES Y TURISMO S.A.S, TRANSPORTES EJECUTIVOS Y DE TURISMO AUTO OCASIONAL S.A.S, CONSTRUCCIONES EL CONDOR S.A, BEST COAL COMPANY S.A.S, APPLUS, SERVITAP, CENTRO DE DESARROLLO TECNOLOGICO DEL CESAR CDT, FUNDACION MENORES DEL FUTURO, entre otras. TRANSEMCO S.A.S cuenta con una amplia trayectoria en el manejo directo y con calidad del Transporte Especial de Ejecutivos"
 	video={false}
 	videoSrc=""
   />
+  <LayoutGalery/>
   </main>
 </Layout>
