@@ -1,9 +1,52 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import LayoutSection1 from "../layouts/LayoutSection1.astro";
+import LayoutSection2 from "../layouts/LayoutSection2.astro";
 ---
 
 <Layout title="Transemco | Servicios">
-	<main>
+  <main>
+    <div
+      class="flex flex-col text-center w-4/5 mx-auto gap-5 my-5 justify-center items-center"
+    >
+      <h1 class="text-4xl tracking-wider">NUESTROS SERVICIOS PROFESIONALES</h1>
+      <p class="text-xl md:w-4/5 text-justify">
+        Transemco S.A.S. esta habilitada para celebrar contratos de servicio
+        público de transporte terrestre automotor especial según el Decreto 431
+        de 2017 teniendo en cuenta las siguientes definiciones y condiciones
+      </p>
+    </div>
+    <LayoutSection2
+      Title="1. Contrato para transporte de estudiantes."
+      inverse={true}
+      Image="https://static.wixstatic.com/media/066062_6f9a65ca51d84f4e86fbbd269e11c2ce~mv2.jpg/v1/fill/w_610,h_1724,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/066062_6f9a65ca51d84f4e86fbbd269e11c2ce~mv2.jpg"
+      Description="Es el que se suscribe entre la entidad territorial, un grupo de padres de familia, el representante legal, rector o director rural del centro educativo o la asociación de padres de familia, con una empresa de Servicio Público de Transporte Terrestre Automotor Especial debidamente habilitada para esta modalidad, cuyo objeto sea la prestación del servicio de transporte de sus estudiantes entre el lugar de residencia y el establecimiento educativo u otros destinos que se requieran en razón de las actividades programadas por el plantel educativo."
+    />
 
-	</main>
+    <LayoutSection2
+      Title="2. Contrato para transporte empresarial."
+      inverse={false}
+      Image="https://static.wixstatic.com/media/066062_6f9a65ca51d84f4e86fbbd269e11c2ce~mv2.jpg/v1/fill/w_610,h_1724,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/066062_6f9a65ca51d84f4e86fbbd269e11c2ce~mv2.jpg"
+      Description="Es el que se celebra entre el representante legal de una empresa o entidad, para el desplazamiento de sus funcionarios, empleados o contratistas, y una empresa de Servicio Público de Transporte Terrestre Automotor Especial debidamente habilitada para esta modalidad, cuyo objeto es la prestación del servicio de transporte de los funcionarios, empleados o contratistas de la contratante, desde la residencia o lugar de habitación hasta el lugar en el cual deban realizar la labor, incluyendo traslados a lugares no previstos en los recorridos diarios, de acuerdo con los términos y la remuneración pactada entre las partes."
+    />
+
+    <LayoutSection2
+      Title="3. Contrato para transporte de turistas"
+      inverse={true}
+      Image="https://static.wixstatic.com/media/066062_6f9a65ca51d84f4e86fbbd269e11c2ce~mv2.jpg/v1/fill/w_610,h_1724,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/066062_6f9a65ca51d84f4e86fbbd269e11c2ce~mv2.jpg"
+      Description="Es el suscrito entre el prestador de servicios turísticos con una empresa de Servicio Público de Transporte Terrestre Automotor Especial debidamente habilitada para esta modalidad, cuyo objeto sea el traslado de turistas."
+    />
+    <LayoutSection2
+      Title="4. Contrato para un grupo específico de usuarios (transporte de particulares)."
+      inverse={false}
+      Image="https://static.wixstatic.com/media/066062_6f9a65ca51d84f4e86fbbd269e11c2ce~mv2.jpg/v1/fill/w_610,h_1724,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/066062_6f9a65ca51d84f4e86fbbd269e11c2ce~mv2.jpg"
+      Description="Es el que celebra el representante de un grupo específico de usuarios con una empresa de Servicio Público de Transporte Terrestre Automotor Especial debidamente habilitada para esta modalidad, cuyo objeto sea la realización de un servicio de transporte expreso para trasladar a todas las personas que hacen parte del grupo desde un origen común hasta un destino común. El traslado puede tener origen y destino en un mismo municipio, siempre y cuando se realice en vehículos de más de 9 pasajeros. Quien suscribe el contrato de transporte paga la totalidad del valor del servicio. Este tipo de contrato no podrá ser celebrado bajo ninguna circunstancia para el transporte de estudiantes."
+    />
+    <LayoutSection2
+      Title="5. Contrato para Transporte de usuarios del servicio de salud."
+      inverse={true}
+      Image="https://static.wixstatic.com/media/066062_6f9a65ca51d84f4e86fbbd269e11c2ce~mv2.jpg/v1/fill/w_610,h_1724,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/066062_6f9a65ca51d84f4e86fbbd269e11c2ce~mv2.jpg"
+      Description="Es el suscrito entre una empresa de Servicio Público de Transporte Terrestre Automotor Especial debidamente habilitada para esta modalidad y las entidades de salud o las personas jurídicas que demandan la necesidad de transporte para atender un servicio de salud para sus usuarios, con el objeto de efectuar el traslado de los usuarios de los servicios de salud, que por su condición o estado no requieran de una ambulancia de traslado asistencial básico o medicalizado."
+    />
+  </main>
 </Layout>

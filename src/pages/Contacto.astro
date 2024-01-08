@@ -1,9 +1,68 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import LayoutSection2 from "../layouts/LayoutSection2.astro";
+import { MapPin, Phone, Mail } from "lucide-astro";
 ---
 
 <Layout title="Transemco | Contacto">
-	<main>
+  <main>
+    <section class="">
+      <div
+        class="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center"
+      >
+        <div
+          class:list={[
+            "lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center",
+          ]}
+        >
+          <h1
+            class="title-font sm:text-4xl text-center w-full text-3xl mb-4 md:w-4/5 mx-auto tracking-wider"
+          >
+            ¡EN TRANSEMCO S.A.S. ESTAMOS PARA SERVIRLE!
+          </h1>
+          <ul
+            class="my-8 leading-relaxed flex flex-col gap-4 md:text-lg text-justify mx-auto w-4/5 break-words"
+          >
+            <li class="flex items-center gap-5">
+              <MapPin class="w-9 h-9 " />Carrera 13 Nro. 9A - 77
+              (Barrio: San Joaquin) Valledupar - Cesar - Colombia
+            </li>
 
-	</main>
+            <li class="flex items-center gap-5">
+              <Mail class="w-9 h-9 " />
+              <a href="mailto:gerencia@transemco.com.co"
+                >gerencia@transemco.com.co</a
+              >
+            </li>
+            <li class="flex items-center gap-5">
+              <Phone class="w-9 h-9" />
+              3184899672 | 3184560574<br />
+
+              3166271066 | (5) 82 93 60
+            </li>
+          </ul>
+        </div>
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 h-96">
+          <img
+            class="object-cover object-center rounded w-full h-full animate__animated animate__fadeInUp"
+            alt="hero"
+            src="https://static.wixstatic.com/media/066062_7e9dfede87294543b2ce14904ccb1078~mv2.png/v1/crop/x_0,y_12,w_663,h_513/fill/w_795,h_616,al_c,lg_1,q_90,enc_auto/IMG_20220924_115512%20-%20copia_edited.png"
+          />
+        </div>
+      </div>
+
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe
+            id="gmap_canvas"
+            class="w-4/5 rounded-lg mx-auto mb-5 h-96"
+            src="https://maps.google.com/maps?q=colombia&t=&z=10&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>
