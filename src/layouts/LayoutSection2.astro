@@ -16,7 +16,7 @@ const { Title, Description, Image, inverse } = Astro.props;
     <div
       class:list={[
         "lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center",
-        inverse ? "md:order-1" : "" ,
+        inverse ? "md:order-1" : "" , Image!="" ? "" : "W-full"
       ]}
     >
       <h1
@@ -28,7 +28,7 @@ const { Title, Description, Image, inverse } = Astro.props;
         {Description}
       </p>
     </div>
-    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 h-96">
+    <div class:list={["lg:max-w-lg lg:w-full md:w-1/2 w-5/6 h-96", Image!="" ? "" : "hidden" ]}>
       <img
         class="object-cover object-center rounded w-full h-full"
         alt="hero"
