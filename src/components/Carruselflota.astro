@@ -8,9 +8,9 @@
 
   
 </p>
-<section class="section section-today">
+<section class="section section-today ">
 
-  <div class="today-wrapper">
+  <div class="today-wrapper w-4/5 border rounded-xl shadow-2xl">
     <div class="today-box">
       <div id="card-slider" class="splide today-splide">
         <div class="splide__track">
@@ -185,8 +185,9 @@ document.addEventListener( 'DOMContentLoaded', function () {
 }
 
 .today-wrapper {
-  width: 100rem;
+  width: 80%;
   margin: 8rem auto;
+  overflow-x: hidden;  /* Agrega esta línea para ocultar el desbordamiento horizontal */
 }
 @media only screen and (max-width: 37.5em) {
   .today-wrapper {
