@@ -2,9 +2,12 @@
 import Layout from "../layouts/Layout.astro";
 import LayoutSection1 from "../layouts/LayoutSection1.astro";
 import LayoutSection2 from "../layouts/LayoutSection2.astro";
+import Navbar from "../components/Navbar.astro";
 ---
 
 <Layout title="Transemco | Servicios">
+  <Navbar hero={false} />
+
   <main>
     <div
       class="flex flex-col text-center w-4/5 mx-auto gap-5 my-5 justify-center items-center"

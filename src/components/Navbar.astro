@@ -1,8 +1,14 @@
+---
+interface Props{
+  hero:boolean
+}
 
+const {hero} = Astro.props
+---
 
 
 <div
-  class="w-full z-10 flex md:flex-col justify-between items-center bg-transparent absolute top-0 text-white md:gap-4 gap-10 p-5 "
+  class:list={["w-full z-10 flex md:flex-col justify-between items-center md:gap-4 gap-10 p-5 " , hero && "absolute top-0 text-white"]}
 >
   <a href="/" class="md:flex md:justify-center  md:w-1/5"
     ><img
