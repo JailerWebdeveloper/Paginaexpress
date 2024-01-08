@@ -7,31 +7,44 @@ import Carousel from "../components/Carousel.astro";
 import LayoutGalery from "../layouts/LayoutGalery.astro";
 import Botonmoderno from "../components/Botonmoderno.astro";
 import LayoutSection3 from "../layouts/LayoutSection3.astro";
-
+import Navbar from "../components/Navbar.astro";
 ---
 
 <Layout title="Transemco | Valledupar">
+  <Navbar hero/>
   <main>
-
-    <div class="hero min-h-screen text-white" style="background-image: url(https://media.istockphoto.com/id/543991162/es/foto/transmilenio-autob%C3%BAs-en-bogot%C3%A1.jpg?s=612x612&w=0&k=20&c=-ULKhwW9fAzIwWCcRTb3qaI81oIYnBADsAC8N4tw1pw=);">
+    <div
+      class="hero min-h-screen text-white"
+      style="background-image: url(https://media.istockphoto.com/id/543991162/es/foto/transmilenio-autob%C3%BAs-en-bogot%C3%A1.jpg?s=612x612&w=0&k=20&c=-ULKhwW9fAzIwWCcRTb3qaI81oIYnBADsAC8N4tw1pw=);"
+    >
       <div class="hero-overlay bg-opacity-60"></div>
       <div class="hero-content text-center">
-        <div class=" md:w-4/5">
-          <h1 class="mb-5 text-5xl font-bold tracking-wide">Su Seguridad es lo Primero</h1>
-          <p class="mb-5 w-4/5 text-2xl font-semibold mx-auto">Lo llevamos hasta su destino</p>
-          <Botonmoderno texto="¿quienes somos?"/>
+        <div class="md:w-4/5">
+          <h1 class="mb-5 text-5xl font-bold tracking-wide">
+            Su Seguridad es lo Primero
+          </h1>
+          <p class="mb-5 w-4/5 text-2xl font-semibold mx-auto">
+            Lo llevamos hasta su destino
+          </p>
+          <Botonmoderno texto="¿quienes somos?" />
         </div>
       </div>
     </div>
 
-
-  <LayoutSection3 />
-	<LayoutSection1
-	Title="RESEÑA HISTORICA"
-	Description="TRANSPORTE EMPRESARIAL DE LA COSTA S.A.S es una empresa legalmente constituida registrada con el NIT. 901230939-5, habilitada mediante la Resolución 0027 del 08-04-2019 de MINTRANPORTE para el Transporte Especial de pasajeros; debido a la excelente labor de sus dos (2) socios y vinculados, los cuales formamos una gran familia responsable y comprometida. La Empresa, fue creada con el fin de ofrecer un servicios de Transporte Especial de pasajeros con énfasis en el transporte de Ejecutivos, servicio de transporte escolar y servicio de transportes turísticos, en nuestra experiencia nos satisface haberles servido a las empresas: COMPASS GROUP, CHEMONICS INC, ORO VERDE VIAJES Y TURISMO S.A.S, TRANSPORTES EJECUTIVOS Y DE TURISMO AUTO OCASIONAL S.A.S, CONSTRUCCIONES EL CONDOR S.A, BEST COAL COMPANY S.A.S, APPLUS, SERVITAP, CENTRO DE DESARROLLO TECNOLOGICO DEL CESAR CDT, FUNDACION MENORES DEL FUTURO, entre otras. TRANSEMCO S.A.S cuenta con una amplia trayectoria en el manejo directo y con calidad del Transporte Especial de Ejecutivos"
-	video={false}
-	videoSrc=""
-  />
-  <LayoutGalery/>
+    <LayoutSection3
+      id="QS"
+      title="Mision , vision y valores"
+      card1title="MISIÓN"
+      card2title="VISIÓN"
+      card1text="Transporte Empresarial de la Costa S.A.S., es una Organización de Transporte Especial responsable consigo mismo, la comunidad y el ambiente para una transformación del tránsito en Colombia; dedicada a prestar servicios a un grupo específico de personas que tengan una característica común y homogénea en su origen y destino, como estudiantes, turistas, empleados, personas con discapacidad y/o movilidad reducida, pacientes no crónicos y particulares que requieren de un servicio expreso de calidad y seguridad Con los recursos necesarios para satisfacer las necesidades de los clientes y partes interesadas acorde al Marco legal vigente y políticas de la organización."
+      card2text="Transporte Empresarial de la Costa S.A.S., Se proyecta para el 2031 como uno de las empresas de Transporte Especial líder, aspirando a ser la preferida por su excelente calidad  y seguridad en sus operaciones, aplicando la normatividad vial, contribuyendo con la satisfacción de las necesidades y expectativas de nuestros clientes e interesados; con el apoyo de  recursos a la vanguardia de las exigencias del marco legal vigente , generando desarrollo y bienestar para la sociedad en el presente sin comprometer el legado para las generaciones futuras."
+    />
+    <LayoutSection1
+      Title="RESEÑA HISTORICA"
+      Description="TRANSPORTE EMPRESARIAL DE LA COSTA S.A.S es una empresa legalmente constituida registrada con el NIT. 901230939-5, habilitada mediante la Resolución 0027 del 08-04-2019 de MINTRANPORTE para el Transporte Especial de pasajeros; debido a la excelente labor de sus dos (2) socios y vinculados, los cuales formamos una gran familia responsable y comprometida. La Empresa, fue creada con el fin de ofrecer un servicios de Transporte Especial de pasajeros con énfasis en el transporte de Ejecutivos, servicio de transporte escolar y servicio de transportes turísticos, en nuestra experiencia nos satisface haberles servido a las empresas: COMPASS GROUP, CHEMONICS INC, ORO VERDE VIAJES Y TURISMO S.A.S, TRANSPORTES EJECUTIVOS Y DE TURISMO AUTO OCASIONAL S.A.S, CONSTRUCCIONES EL CONDOR S.A, BEST COAL COMPANY S.A.S, APPLUS, SERVITAP, CENTRO DE DESARROLLO TECNOLOGICO DEL CESAR CDT, FUNDACION MENORES DEL FUTURO, entre otras. TRANSEMCO S.A.S cuenta con una amplia trayectoria en el manejo directo y con calidad del Transporte Especial de Ejecutivos"
+      video={false}
+      videoSrc=""
+    />
+    <LayoutGalery />
   </main>
 </Layout>
